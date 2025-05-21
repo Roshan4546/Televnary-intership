@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="./img/logo.png" alt="Logo" class="logo" />
+      <h1>My Brand</h1>
+    </div>
+
+    <nav id="navbar" class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle">🌓</button>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="main-section">
+      <div class="main-content">
+        <h2>Welcome To</h2>
+        <h1>My Awesome Website</h1>
+        <p>Your one-stop solution for digital services.</p>
+        <div class="buttons">
+          <button>Get Started</button>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2>About Us</h2>
+          <p>We deliver top-notch solutions to enhance your business and digital experience.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima dicta molestias vitae eligendi. Perferendis molestiae doloribus nemo voluptatum exercitationem veniam dolorem facilis sapiente, nihil quos consequatur quisquam error veritatis.</p>
+          <button>Read More</button>
+        </div>
+        <div class="about-image">
+          <img src="./img/about.webp" alt="About image">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="services-header">
+        <h2>Our Services</h2>
+        <p>What we do</p>
+        <p>From design to development, we’ve got you covered.</p>
+      </div>
+      <div class="grid-three--cols">
+        <div class="service-card">Design</div>
+        <div class="service-card">Development</div>
+        <div class="service-card">Marketing</div>
+      </div>
+    </section>
+
+    <section id="blog" class="blog">
+      <div class="blog-header--content">
+        <h2>Latest Blog</h2>
+        <p>News & Updates</p>
+      </div>
+      <div class="grid-three--cols">
+        <div class="blog-card">Blog Post 1</div>
+        <div class="blog-card">Blog Post 2</div>
+        <div class="blog-card">Blog Post 3</div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you.</p>
+        <ul>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><a href="#">+123 456 789</a></li>
+          <li><a href="#">123 Street, City</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 My Brand. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navbar = document.getElementById("navbar");
+    const themeToggle = document.getElementById("themeToggle");
+
+    hamburger.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+    });
+  </script>
+</body>
+</html>
